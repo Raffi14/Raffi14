@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Main() {
   return (
     <>
-    <div className="snap-y snap-mandatory overflow-y-scroll h-screen">
+    <div className="snap-y snap-mandatory overflow-y-scroll h-screen no-scrollbar">
       <Navigation/>
       <div className="snap-always snap-center">
         <Home/>
@@ -169,9 +169,28 @@ function About(){
 }
 
 function Skill(){
+  let slides = [
+    "/Source_image/Html.png",
+    "/Source_image/Css.png",
+    "/Source_image/Js.png",
+  ];
+
   return(
     <>
-      <div className="w-full h-screen bg-slate-300 " id="Skill"></div>
+      <div className="flex flex-col w-full h-lvh bg-gray-400" id="Skill">
+        <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-black">Skill & Ability</h1>
+        <div className="w-full h-screen inline-flex overflow-hidden [mask-image:_linear-gradient(to_bottom,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <ul className="flex flex-col md:flex-row mx-auto justify-center md:justify-start animate-infinite-scrollY md:animate-infinite-scroll mt-14 md:mt-[15vh] md:gap-28 gap-12">
+            {slides.map((e, i) => (
+              <li key={i}>
+                <div className="relative pt-4 md:pt-6 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300 border-2 xl:h-[250px] xl:w-[250px] md:h-[150px] md:w-[150px] h-[100px] w-[100px]">
+                  <Image src={e} width={200} height={200} alt={e} className="mx-auto xl:h-[200px] xl:w-[200px] md:h-[100px] md:w-[100px] h-[70px] w-[70px]"/>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </>
   )
 }
