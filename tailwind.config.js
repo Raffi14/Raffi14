@@ -13,16 +13,16 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
-        'infinite-scroll': 'infinite-scroll 15s linear infinite',
-        'infinite-scrollY': 'infinite-scrollY 15s linear infinite',
+        'infinite-scroll': 'infinite-scroll 10s linear infinite',
+        'infinite-scrollY': 'infinite-scrollY 5s linear infinite',
       },
       keyframes: {
         'infinite-scroll': {
-          from: { transform: 'translateX(120%)' },
-          to: { transform: 'translateX(-130%)' },
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(-100%)' },
         },
         'infinite-scrollY': {
-          from: { transform: 'translateY(100%)' },
+          from: { transform: 'translateY(150%)' },
           to: { transform: 'translateY(-100%)' },
         },
       },

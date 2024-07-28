@@ -33,7 +33,7 @@ function Navigation()
     <>
       <nav className="fixed w-full items-center bg-white z-10">
         <div className="flex">
-          <Image src={personal_logo} width={50} height={50} className="ml-5 md:ml-32" alt="Logo"/>
+          <Image src={personal_logo} width={50} height={50} className="ml-5 md:ml-20 xl:ml-32" alt="Logo"/>
           <span className="text-black mt-3 ml-2 font-bold font-sans">Raffi Fabiansyah</span>
         </div>
         {
@@ -60,7 +60,7 @@ function Navigation()
             </button>
           )
         }
-        <ul className="hidden md:flex justify-end w-4/5 absolute right-0 top-0 h-14 px-4 gap-20 text-black font-semibold leading-9 pt-2 mr-40">
+        <ul className="hidden md:flex justify-end w-4/5 absolute right-0 top-0 h-14 px-4 md:gap-10 xl:gap-20 text-black font-semibold leading-9 pt-2 md:mr-20 xl:mr-40">
           <li><Link href="#Home" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Home</Link></li>
           <li><Link href="#About" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">About</Link></li>
           <li><Link href="#Skill" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Skill & ability</Link></li>
@@ -155,10 +155,10 @@ function Home()
 function About(){
   return(
     <>
-      <div className="flex flex-col md:flex-row w-full h-lvh bg-slate-600" id="About">
+      <div className="flex flex-col md:flex-row w-full h-lvh bg-sky-800 overflow-hidden" id="About">
         <div className="flex-1  bg-[url('../../public/Source_image/profile.png')] bg-no-repeat bg-cover grayscale bg-center max-[768px]:border-b-4 md:border-r-4"></div>
         <div className="flex-1">
-          <h1 className="text-center mt-5 md:mt-24 xl:mt-44 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">About Me</h1>
+          <h1 className="text-center mt-5 md:mt-24 xl:mt-44 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">About <span className="text-gray-400">Me</span></h1>
           <div className="w-3/4 mx-auto mt-[2vh] md:mt-[10vh]">
               <p className="font-sans text-sm md:text-xl text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
@@ -175,20 +175,29 @@ function Skill(){
     "/Source_image/Js.png",
   ];
 
+  let Name = [
+    "Html5",
+    "Css3",
+    "JavaScript",
+  ]
+
   return(
     <>
       <div className="flex flex-col w-full h-lvh bg-gray-400" id="Skill">
-        <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-black">Skill & Ability</h1>
-        <div className="w-full h-screen inline-flex overflow-hidden [mask-image:_linear-gradient(to_bottom,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-          <ul className="flex flex-col md:flex-row mx-auto justify-center md:justify-start animate-infinite-scrollY md:animate-infinite-scroll mt-14 md:mt-[15vh] md:gap-28 gap-12">
-            {slides.map((e, i) => (
-              <li key={i}>
-                <div className="relative pt-4 md:pt-6 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300 border-2 xl:h-[250px] xl:w-[250px] md:h-[150px] md:w-[150px] h-[100px] w-[100px]">
-                  <Image src={e} width={200} height={200} alt={e} className="mx-auto xl:h-[200px] xl:w-[200px] md:h-[100px] md:w-[100px] h-[70px] w-[70px]"/>
-                </div>
-              </li>
-            ))}
-          </ul>
+        <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-black">Skill & Abilities</h1>
+        <div className="w-full h-screen inline-flex overflow-hidden">
+          <div className="relative w-40 md:w-full mx-auto border-x-2 md:border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 md:mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_bottom,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+            <ul className="flex flex-col md:flex-row mx-auto justify-center md:justify-start animate-infinite-scrollY md:animate-infinite-scroll md:gap-28 gap-12">
+              {slides.map((e, i) => (
+                <li key={i}>
+                  <div className="relative mx-auto pt-4 md:pt-6 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300 border-2 xl:h-[250px] xl:w-[250px] md:h-[150px] md:w-[150px] h-[100px] w-[100px]">
+                    <Image src={e} width={200} height={200} alt={e} className="mx-auto xl:h-[150px] xl:w-[150px] md:h-[70px] md:w-[80px] h-[50px] w-[50px]"/>
+                    <p className="text-black text-center text-xs sm:text-sm md:text-xl xl:text-2xl font-sans font-bold mt-1 md:mt-2 xl:mt-5">{Name[i]}</p>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </>
