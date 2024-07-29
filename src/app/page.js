@@ -46,10 +46,10 @@ function Navigation()
                 <span className="block h-1 w-8 bg-gray-600 rotate-45"></span>
               </button>
             </li>
-            <li><a href="#" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Home</a></li>
-            <li><a href="#" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">About</a></li>
-            <li><a href="#" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Skill & ability</a></li>
-            <li><a href="#" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Contact</a></li>
+            <li><a href="#Home" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Home</a></li>
+            <li><a href="#About" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">About</a></li>
+            <li><a href="#Skill" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Skill & Abilities</a></li>
+            <li><a href="#Contact" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Contact</a></li>
             </ul>
             </div>
           ):(
@@ -63,8 +63,8 @@ function Navigation()
         <ul className="hidden md:flex justify-end w-4/5 absolute right-0 top-0 h-14 px-4 md:gap-10 xl:gap-20 text-black font-semibold leading-9 pt-2 md:mr-20 xl:mr-40">
           <li><Link href="#Home" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Home</Link></li>
           <li><Link href="#About" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">About</Link></li>
-          <li><Link href="#Skill" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Skill & ability</Link></li>
-          <li><Link href="#" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Contact</Link></li>
+          <li><Link href="#Skill" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Skill & abilities</Link></li>
+          <li><Link href="#Contact" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Contact</Link></li>
         </ul>
       </nav>
     </>
@@ -106,7 +106,7 @@ function Home()
 
   return(
     <>
-      <div id="Home" className="flex flex-col-reverse h-lvh md:flex-row relative w-full bg-[url('../../public/Source_image/background.jpg')] bg-no-repeat bg-cover to-slate-800 ">
+      <div id="Home" className="flex flex-col-reverse h-lvh md:flex-row relative w-full bg-[url('../../public/Source_image/background.jpg')] bg-no-repeat bg-cover">
         <div className="flex-1">
           <div className="my-5 md:my-48 xl:mt-[30vh]">
           <h1 className="ml-10 md:ml-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-sky-800">HI,</h1>
@@ -126,7 +126,9 @@ function Home()
               }}/> 
             </span>
           </div>
-          <button className="ml-10 mt-5 w-32 h-10 rounded-md bg-sky-800 font-sans font-bold md:mt-10 md:ml-32">Contact Me</button>
+          <a href="#Contact">
+            <button className="ml-10 mt-5 w-32 h-10 rounded-md bg-sky-800 font-sans font-bold md:mt-10 md:ml-32">Contact Me</button>
+          </a>
           <div className="flex mt-11 md:my-36 xl:mt-[30vh] gap-8">
             <a href="https://www.linkedin.com/in/raffi-fabiansyah-a6654031b/"><button className="ml-10 w-7 h-7 rounded-md md:ml-36 bg-[url('../../public/Source_image/LinkedIn.png')] bg-no-repeat bg-cover"></button></a>
             <a href="https://github.com/Raffi14"><button className="w-7 h-7 rounded-md  bg-[url('../../public/Source_image/GitHub_Logo.png')] bg-no-repeat bg-cover"></button></a>
@@ -183,8 +185,8 @@ function Skill(){
 
   return(
     <>
-      <div className="flex flex-col w-full h-lvh bg-gray-400" id="Skill">
-        <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-black">Skill & Abilities</h1>
+      <div className="flex flex-col w-full h-lvh bg-gradient-to-r from-gray-200" id="Skill">
+        <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">Skill & Abilities</h1>
         <div className="w-full h-screen inline-flex overflow-hidden">
           <div className="relative w-40 md:w-full mx-auto border-x-2 md:border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 md:mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_bottom,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
             <ul className="flex flex-col md:flex-row mx-auto justify-center md:justify-start animate-infinite-scrollY md:animate-infinite-scroll md:gap-28 gap-12">
