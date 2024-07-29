@@ -131,7 +131,7 @@ function Home()
           </a>
           <div className="flex mt-11 md:my-36 xl:mt-[30vh] gap-8">
             <a href="https://www.linkedin.com/in/raffi-fabiansyah-a6654031b/"><button className="ml-10 w-7 h-7 rounded-md md:ml-36 bg-[url('../../public/Source_image/LinkedIn.png')] bg-no-repeat bg-cover"></button></a>
-            <a href="https://github.com/Raffi14"><button className="w-7 h-7 rounded-md  bg-[url('../../public/Source_image/GitHub_Logo.png')] bg-no-repeat bg-cover"></button></a>
+            <a href="https://github.com/Raffi14"><button className="w-7 h-7 rounded-md  bg-[url('../../public/Source_image/Github_Logo.png')] bg-no-repeat bg-cover"></button></a>
           </div>
           </div>
         </div>
