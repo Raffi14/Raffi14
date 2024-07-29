@@ -18,11 +18,11 @@ module.exports = {
       },
       keyframes: {
         'infinite-scroll': {
-          from: { transform: 'translateX(100%)' },
+          from: { transform: 'translateX(0%)' },
           to: { transform: 'translateX(-100%)' },
         },
         'infinite-scrollY': {
-          from: { transform: 'translateY(150%)' },
+          from: { transform: 'translateY(0)' },
           to: { transform: 'translateY(-100%)' },
         },
       },
