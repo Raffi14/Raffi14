@@ -10,21 +10,11 @@ import 'boxicons/css/boxicons.min.css'
 export default function Main() {
   return (
     <>
-    <div className="snap-y snap-mandatory overflow-y-scroll h-screen no-scrollbar">
-      <Navigation/>
-      <div className="snap-always snap-center">
-        <Home/>
-      </div>
-      <div className="snap-always snap-center">
-        <About/>
-      </div>
-      <div className="snap-always snap-center">
-        <Skill/>
-      </div>
-      <div className="snap-always snap-start">
-        <Contact/>
-      </div>
-    </div>
+    <Navigation/>
+    <Home/>
+    <About/>
+    <Skill/>
+    <Contact/>
     </>
   );
 }
@@ -50,10 +40,10 @@ function Navigation()
                 <span className="block h-1 w-8 bg-gray-600 rotate-45"></span>
               </button>
             </li>
-            <li><a href="#Home" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Home</a></li>
-            <li><a href="#About" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">About</a></li>
-            <li><a href="#Skill" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Skill & Abilities</a></li>
-            <li><a href="#Contact" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Contact</a></li>
+            <li><Link href="#Home" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Home</Link></li>
+            <li><Link href="#About" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">About</Link></li>
+            <li><Link href="#Skill" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Skill & Abilities</Link></li>
+            <li><Link href="#Contact" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Contact</Link></li>
             </ul>
             </div>
           ):(
@@ -110,7 +100,7 @@ function Home()
 
   return(
     <>
-      <div id="Home" className="flex flex-col-reverse h-lvh md:flex-row relative w-full bg-[url('../../public/Source_image/background.jpg')] bg-no-repeat bg-cover">
+      <div id="Home" className="snap-always snap-start flex flex-col-reverse h-lvh md:flex-row relative w-full bg-[url('../../public/Source_image/background.jpg')] bg-no-repeat bg-cover">
         <div className="flex-1">
           <div className="my-5 md:my-48 xl:mt-[30vh]">
           <h1 className="ml-10 md:ml-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-sky-800">HI,</h1>
@@ -161,7 +151,7 @@ function Home()
 function About(){
   return(
     <>
-      <div className="flex flex-col md:flex-row w-full h-lvh bg-sky-800 overflow-hidden" id="About">
+      <div className="snap-always snap-start flex flex-col md:flex-row w-full h-lvh bg-sky-800 overflow-hidden" id="About">
         <div className="flex-1 bg-[url('../../public/Source_image/profile.png')] bg-no-repeat bg-cover grayscale bg-center max-[768px]:border-b-4 md:border-r-4"></div>
         <div className="flex-1">
           <h1 className="ml-12 md:ml-16 xl:ml-24 border-l-8 pl-5 border-gray-600 mt-5 md:mt-24 xl:mt-44 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">About <span className="text-gray-400">Me</span></h1>
@@ -201,7 +191,7 @@ function Skill(){
 
   return(
     <>
-      <div className="flex flex-col w-full h-lvh bg-gradient-to-r from-gray-200" id="Skill">
+      <div className="snap-always snap-start flex flex-col w-full h-lvh bg-gray-600" id="Skill">
         <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">Skill & Abilities</h1>
         <div className="w-full h-screen inline-flex overflow-hidden">
           <div className="relative h-40 w-full mx-auto pt-5 border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
@@ -251,7 +241,7 @@ function Contact(){
   };
   return(
     <>
-      <div className="flex flex-col w-full h-[100%] bg-white" id="Contact">
+      <div className="snap-always snap-start flex flex-col w-full h-[100%] bg-white" id="Contact">
         <div className="h-full mt-16">
         <h2 className="text-center mb-[.5em] text-black text-[36px] font-bold">Contact <span className="text-yellow-600">Me</span></h2>
         <form onSubmit={onSubmit} className=" w-1/2 mx-auto mb-[3em]">
