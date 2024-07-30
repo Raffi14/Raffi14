@@ -204,9 +204,9 @@ function Skill(){
       <div className="flex flex-col w-full h-lvh bg-gradient-to-r from-gray-200" id="Skill">
         <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">Skill & Abilities</h1>
         <div className="w-full h-screen inline-flex overflow-hidden">
-          <div className="relative w-40 md:w-full mx-auto border-x-2 md:border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 md:mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_bottom,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)] md:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-            <div className="flex overflow-hidden md:overflow-x-scroll overflow-y-scroll no-scrollbar">
-            <ul className="flex flex-col md:flex-row mx-auto gap-6 md:gap-20">
+          <div className="relative h-40 w-full mx-auto pt-5 border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+            <div className="flex overflow-hidden overflow-x-scroll no-scrollbar">
+            <ul className="flex mx-auto gap-3 md:gap-20">
               {slides.map((e, i) => (
                 <li key={i}>
                   <div className="relative mx-auto pt-4 md:pt-6 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300 border-2 xl:h-[250px] xl:w-[250px] md:h-[150px] md:w-[150px] h-[100px] w-[100px]">
