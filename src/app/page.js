@@ -23,6 +23,43 @@ export default function Main() {
 function Navigation()
 {
   const [open, IsOpen] = useState(false);
+  const [isVisibleHome, setIsVisibleHome] = useState(false);
+  const [isVisibleAbout, setIsVisibleAbout] = useState(false);
+  const [isVisibleSkill, setIsVisibleSkill] = useState(false);
+  const [isVisiblecontact, setIsVisibleContact] = useState(false);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    if (currentScrollY < 300) {
+      setIsVisibleHome(true);
+      setIsVisibleAbout(false);
+      setIsVisibleSkill(false);
+      setIsVisibleContact(false);
+    } else if(currentScrollY <= 800 && currentScrollY > 300){
+      setIsVisibleHome(false);
+      setIsVisibleAbout(true);
+      setIsVisibleContact(false);
+      setIsVisibleSkill(false);
+    } else if(currentScrollY <= 1600 && currentScrollY > 800){
+      setIsVisibleAbout(false);
+      setIsVisibleHome(false);
+      setIsVisibleSkill(true);
+      setIsVisibleContact(false);
+    } else if(currentScrollY <= 2500 && currentScrollY > 1600){
+      setIsVisibleSkill(false);
+      setIsVisibleHome(false);
+      setIsVisibleContact(true);
+      setIsVisibleAbout(false);
+    }
+  }
+
+
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return(
     <>
       <nav className="fixed w-full items-center bg-white z-10">
@@ -55,10 +92,10 @@ function Navigation()
           )
         }
         <ul className="hidden md:flex justify-end w-4/5 absolute right-0 top-0 h-14 px-4 md:gap-10 xl:gap-20 text-black font-semibold leading-9 pt-2 md:mr-20 xl:mr-40">
-          <li><Link href="#Home" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Home</Link></li>
-          <li><Link href="#About" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">About</Link></li>
-          <li><Link href="#Skill" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Skill & abilities</Link></li>
-          <li><Link href="#Contact" className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2">Contact</Link></li>
+          <li><Link href="#Home" className={`${isVisibleHome ? "block border-b-2 border-cyan-800" : ""}`}>Home</Link></li>
+          <li><Link href="#About" className={`${isVisibleAbout ? "block border-b-2 border-cyan-800" : ""}`}>About</Link></li>
+          <li><Link href="#Skill" className={`${isVisibleSkill ? "block border-b-2 border-cyan-800" : ""}`}>Skill & abilities</Link></li>
+          <li><Link href="#Contact" className={`${isVisiblecontact ? "block border-b-2 border-cyan-800" : ""}`}>Contact</Link></li>
         </ul>
       </nav>
     </>
@@ -195,7 +232,7 @@ function Skill(){
         <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">Skill & Abilities</h1>
         <div className="w-full h-screen inline-flex overflow-hidden">
           <div className="relative h-40 w-full mx-auto pt-5 border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-            <div className="flex overflow-hidden overflow-x-scroll no-scrollbar">
+            <div className="flex overflow-hidden overflow-x-scroll scroll-hide">
             <ul className="flex mx-auto gap-3 md:gap-20">
               {slides.map((e, i) => (
                 <li key={i}>

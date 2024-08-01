@@ -30,12 +30,13 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
 }
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+.scroll-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 
