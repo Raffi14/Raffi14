@@ -30,27 +30,10 @@ function Navigation()
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-    if (currentScrollY < 300) {
-      setIsVisibleHome(true);
-      setIsVisibleAbout(false);
-      setIsVisibleSkill(false);
-      setIsVisibleContact(false);
-    } else if(currentScrollY <= 800 && currentScrollY > 300){
-      setIsVisibleHome(false);
-      setIsVisibleAbout(true);
-      setIsVisibleContact(false);
-      setIsVisibleSkill(false);
-    } else if(currentScrollY <= 1600 && currentScrollY > 800){
-      setIsVisibleAbout(false);
-      setIsVisibleHome(false);
-      setIsVisibleSkill(true);
-      setIsVisibleContact(false);
-    } else if(currentScrollY <= 2500 && currentScrollY > 1600){
-      setIsVisibleSkill(false);
-      setIsVisibleHome(false);
-      setIsVisibleContact(true);
-      setIsVisibleAbout(false);
-    }
+    setIsVisibleHome(currentScrollY < 300);
+    setIsVisibleAbout(currentScrollY > 300 && currentScrollY <= 800);
+    setIsVisibleSkill(currentScrollY > 800 && currentScrollY <= 1600);
+    setIsVisibleContact(currentScrollY > 1600 && currentScrollY <= 2500);
   }
 
 
