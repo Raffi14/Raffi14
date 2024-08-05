@@ -39,4 +39,8 @@ body {
   scrollbar-width: none;
 }
 
+.active{
+  border-bottom: 2px solid rgb(21 94 117);
+}
+
 

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import personal_logo from "../../public/Source_image/personal_logo.png";
 import TypewriterComponent from "typewriter-effect";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
-import Link from "next/link";
+import { Link } from "react-scroll";
 import 'boxicons/css/boxicons.min.css'
 
 export default function Main() {
@@ -23,26 +23,6 @@ export default function Main() {
 function Navigation()
 {
   const [open, IsOpen] = useState(false);
-  const [isVisibleHome, setIsVisibleHome] = useState(false);
-  const [isVisibleAbout, setIsVisibleAbout] = useState(false);
-  const [isVisibleSkill, setIsVisibleSkill] = useState(false);
-  const [isVisiblecontact, setIsVisibleContact] = useState(false);
-
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-    setIsVisibleHome(currentScrollY < 300);
-    setIsVisibleAbout(currentScrollY > 300 && currentScrollY <= 800);
-    setIsVisibleSkill(currentScrollY > 800 && currentScrollY <= 1600);
-    setIsVisibleContact(currentScrollY > 1600 && currentScrollY <= 2500);
-  }
-
-
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return(
     <>
       <nav className="fixed w-full items-center bg-white z-10">
@@ -60,10 +40,10 @@ function Navigation()
                 <span className="block h-1 w-8 bg-gray-600 rotate-45"></span>
               </button>
             </li>
-            <li><Link href="#Home" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Home</Link></li>
-            <li><Link href="#About" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">About</Link></li>
-            <li><Link href="#Skill" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Skill & Abilities</Link></li>
-            <li><Link href="#Contact" onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Contact</Link></li>
+            <li><Link to="Home" activeClass="active" spy={true} onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Home</Link></li>
+            <li><Link to="About" activeClass="active" spy={true} onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">About</Link></li>
+            <li><Link to="Skill" activeClass="active" spy={true} onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Skill & Abilities</Link></li>
+            <li><Link to="Contact" activeClass="active" spy={true} onClick={(e) => IsOpen(!open)} className="block hover:border-b-2 border-cyan-800 focus:text-cyan-800 focus:border-b-2 text-white">Contact</Link></li>
             </ul>
             </div>
           ):(
@@ -75,10 +55,10 @@ function Navigation()
           )
         }
         <ul className="hidden md:flex justify-end w-4/5 absolute right-0 top-0 h-14 px-4 md:gap-10 xl:gap-20 text-black font-semibold leading-9 pt-2 md:mr-20 xl:mr-40">
-          <li><Link href="#Home" className={`${isVisibleHome ? "block border-b-2 border-cyan-800" : ""}`}>Home</Link></li>
-          <li><Link href="#About" className={`${isVisibleAbout ? "block border-b-2 border-cyan-800" : ""}`}>About</Link></li>
-          <li><Link href="#Skill" className={`${isVisibleSkill ? "block border-b-2 border-cyan-800" : ""}`}>Skill & abilities</Link></li>
-          <li><Link href="#Contact" className={`${isVisiblecontact ? "block border-b-2 border-cyan-800" : ""}`}>Contact</Link></li>
+          <li><Link to="Home" activeClass="active" spy={true} className="cursor-pointer">Home</Link></li>
+          <li><Link to="About" activeClass="active" spy={true} className="cursor-pointer">About</Link></li>
+          <li><Link to="Skill" activeClass="active" spy={true} className="cursor-pointer">Skill & abilities</Link></li>
+          <li><Link to="Contact" activeClass="active" spy={true} className="cursor-pointer">Contact</Link></li>
         </ul>
       </nav>
     </>
@@ -140,11 +120,11 @@ function Home()
               }}/> 
             </span>
           </div>
-          <a href="#Contact">
+          <Link to="Contact">
             <button className="ml-10 mt-5 w-32 h-10 rounded-md border-2 text-black hover:text-white border-black bg-transparent hover:bg-sky-800 font-sans font-bold md:mt-10 md:ml-32">Contact Me</button>
-          </a>
+          </Link>
           <div className="flex mt-11 md:my-36 xl:mt-[30vh] gap-8">
-            <a href="https://www.linkedin.com/in/raffi-fabiansyah-a6654031b/"><button className="ml-10 w-7 h-7 rounded-md md:ml-36 bg-[url('../../public/Source_image/LinkedIn.png')] bg-no-repeat bg-cover"></button></a>
+            <a href="https://www.linkedin.com/in/raffi-fabiansyah/"><button className="ml-10 w-7 h-7 rounded-md md:ml-36 bg-[url('../../public/Source_image/LinkedIn.png')] bg-no-repeat bg-cover"></button></a>
             <a href="https://github.com/Raffi14"><button className="w-7 h-7 rounded-md  bg-[url('../../public/Source_image/Github_Logo.png')] bg-no-repeat bg-cover"></button></a>
           </div>
           </div>
@@ -214,7 +194,7 @@ function Skill(){
       <div className="snap-always snap-start flex flex-col w-full h-lvh bg-gray-600" id="Skill">
         <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">Skill & Abilities</h1>
         <div className="w-full h-screen inline-flex overflow-hidden">
-          <div className="relative h-40 w-full mx-auto pt-5 border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <div className="relative cursor-none h-40 w-full mx-auto pt-5 border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
             <div className="flex overflow-hidden overflow-x-scroll scroll-hide">
             <ul className="flex mx-auto gap-3 md:gap-20">
               {slides.map((e, i) => (
@@ -271,29 +251,29 @@ function Contact(){
           </div>
           <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message" className="border-2 border-black w-full max-h-36 md:max-h-screen p-[.5em] font-[18px] text-black bg-[rgb(241, 241, 241)] rounded-lg mt-[1rem] resize-none"></textarea>
           <div className="w-full">
-            <input type="submit" value="Send Message" className="mx-auto block bg-transparent border-2 hover:bg-black hover:text-white border-black text-black w-40 h-10 mt-5 rounded-lg"/>
+            <input type="submit" value="Send Message" className="cursor-pointer mx-auto block bg-transparent border-2 hover:bg-black hover:text-white border-black text-black w-40 h-10 mt-5 rounded-lg"/>
           </div>
         </form>
         <span className="text-black">{result}</span>
         </div>
         <div className="w-[100%] relative bottom-0 pt-[40px] pr-0 bg-black">
           <div className="text-center pb-[25px] text-white space-x-2">
-            <a href="https://www.linkedin.com/in/raffi-fabiansyah-a6654031b/"><button className="bg-[url('../../public/Source_image/linkedin-square-logo.png')] bg-no-repeat bg-cover w-[40px] h-[40px] rounded-md hover:scale-150 border-2 border-orange-700"></button></a>
+            <a href="https://www.linkedin.com/in/raffi-fabiansyah/"><button className="bg-[url('../../public/Source_image/linkedin-square-logo.png')] bg-no-repeat bg-cover w-[40px] h-[40px] rounded-md hover:scale-150 border-2 border-orange-700"></button></a>
             <a href="https://github.com/Raffi14"><button className="bg-[url('../../public/Source_image/github-logo.png')] bg-no-repeat bg-cover w-[40px] h-[40px] rounded-md hover:scale-150 border-2 border-orange-700"></button></a>
             <a href="mailto:raffifabiansyah@gmail.com"><button className="bg-[url('../../public/Source_image/Email.png')] bg-no-repeat bg-cover w-[40px] h-[40px] rounded-md hover:scale-150 border-2 border-orange-700"></button></a>
           </div>
           <ul className="mt-0 p-0 text-[18px] space-x-8 mb-0 text-center">
             <li className="inline-block pt-0 pr-15px">
-              <a href="#Home" className="text-white border-b-4 border-transparent hover:border-orange-700">Home</a>
+              <Link to="Home" className="cursor-pointer text-white border-b-4 border-transparent hover:border-orange-700">Home</Link>
             </li>
             <li className="inline-block pt-0 pr-15px">
-              <a href="#About" className="text-white border-b-4 border-transparent hover:border-orange-700">About</a>
+              <Link to="About" className="cursor-pointer text-white border-b-4 border-transparent hover:border-orange-700">About</Link>
             </li>
             <li className="inline-block pt-0 pr-15px">
-              <a href="#Skill" className="text-white border-b-4 border-transparent hover:border-orange-700">Skill</a>
+              <Link to="Skill" className="cursor-pointer text-white border-b-4 border-transparent hover:border-orange-700">Skill</Link>
             </li>
             <li className="inline-block pt-0 pr-15px">
-              <a href="#Contact" className="text-white border-b-4 border-transparent hover:border-orange-700">Contact</a>
+              <Link to="Contact" className="cursor-pointer text-white border-b-4 border-transparent hover:border-orange-700">Contact</Link>
             </li>
           </ul>
           <p className="mt-[15px] text-center text-[12px] text-white">Ⓒ Raffi Fabiansyah | All Rights Reserved</p>
