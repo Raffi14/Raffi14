@@ -30,17 +30,17 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
-.scroll-hide::-webkit-scrollbar {
-  display: none;
-}
-.scroll-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.active{
-  border-bottom: 2px solid rgb(21 94 117);
+  .scroll-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .active{
+    border-bottom: 2px solid rgb(21 94 117);
+  }
 }
 
 
