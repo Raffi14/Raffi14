@@ -111,7 +111,6 @@ function Home()
               <TypewriterComponent options={{
                 strings:[
                   "a Programmer",
-                  "a Pro-Gamer",
                   "Ellen's Husband",
                 ],
                 autoStart: true,
@@ -156,7 +155,7 @@ function About(){
         <div className="flex-1">
           <h1 className="ml-12 md:ml-16 xl:ml-24 border-l-8 pl-5 border-gray-600 mt-5 md:mt-24 xl:mt-44 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">About <span className="text-gray-400">Me</span></h1>
           <div className="w-3/4 mx-auto mt-[2vh] md:mt-[10vh]">
-              <p className="font-sans text-sm md:text-xl text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="font-sans text-sm md:text-xl text-justify">I am one of those people who are passionate about combining creativity and new technology.</p>
           </div>
         </div>
       </div>
