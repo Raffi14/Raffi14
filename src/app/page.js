@@ -5,8 +5,6 @@ import personal_logo from "../../public/Source_image/personal_logo.png";
 import TypewriterComponent from "typewriter-effect";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { Link } from "react-scroll";
-import 'boxicons/css/boxicons.min.css'
-
 export default function Main() {
   return (
     <>
