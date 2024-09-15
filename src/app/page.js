@@ -23,7 +23,7 @@ function Navigation()
   const [open, IsOpen] = useState(false);
   return(
     <>
-      <nav className="fixed w-full items-center bg-white z-10">
+      <nav className="fixed w-full items-center bg-[#F1F1F1] z-10">
         <div className="flex">
           <Image src={personal_logo} width={50} height={50} className="ml-5 md:ml-20 xl:ml-32" alt="Logo"/>
           <span className="text-black mt-3 ml-2 font-bold font-sans">Raffi Fabiansyah</span>
@@ -151,7 +151,7 @@ function About(){
       <div className="snap-always snap-start flex flex-col md:flex-row w-full h-lvh bg-sky-800 overflow-hidden" id="About">
         <div className="flex-1 bg-[url('../../public/Source_image/profile.png')] bg-no-repeat bg-cover grayscale bg-center max-[768px]:border-b-4 md:border-r-4"></div>
         <div className="flex-1">
-          <h1 className="ml-12 md:ml-16 xl:ml-24 border-l-8 pl-5 border-gray-600 mt-5 md:mt-24 xl:mt-44 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">About <span className="text-gray-400">Me</span></h1>
+          <h1 className="ml-12 md:ml-16 xl:ml-24 border-l-8 pl-5 border-gray-600 mt-5 md:mt-24 xl:mt-44 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">About <span className="text-yellow-600">Me</span></h1>
           <div className="w-3/4 mx-auto mt-[2vh] md:mt-[10vh]">
               <p className="font-sans text-sm md:text-xl text-justify">I am one of those people who are passionate about combining creativity and new technology.</p>
           </div>
@@ -188,8 +188,8 @@ function Skill(){
 
   return(
     <>
-      <div className="snap-always snap-start flex flex-col w-full h-lvh bg-gray-600" id="Skill">
-        <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-white">Skill & Abilities</h1>
+      <div className="snap-always snap-start flex flex-col w-full h-lvh bg-indigo-400" id="Skill">
+        <h1 className="text-center mt-28 md:mt-32 xl:mt-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased [text-shadow:_20px_20px_8px_rgb(75_85_99)] text-white">Skill & Abilities</h1>
         <div className="w-full h-screen inline-flex overflow-hidden">
           <div className="relative cursor-none h-40 w-full mx-auto pt-5 border-y-8 bg-gray-300 border-gray-700 md:h-52 xl:h-80 mt-[10vh] md:pt-6 xl:pt-8 [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
             <div className="flex overflow-hidden overflow-x-scroll scroll-hide">
