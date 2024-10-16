@@ -104,7 +104,7 @@ function Home()
           <h1 className="ml-10 md:ml-32 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-sky-800">HI,</h1>
           <span className="ml-10 md:ml-32 mt-2 text-2xl font-sans sm:text-3xl md:text-4xl xl:text-5xl font-bold antialiased text-sky-800">I'm <span className="text-yellow-600"> Raffi Fabiansyah</span></span>
           <div className="ml-10 md:ml-32 mt-2 text-xs sm:text-sm md:text-xl xl:text-2xl font-sans font-bold flex gap-2">
-            <span className="text-sky-800">I Am Atomic</span>
+            <span className="text-sky-800">I Am </span>
             <span className="text-yellow-600">
               <TypewriterComponent options={{
                 strings:[
