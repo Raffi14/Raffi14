@@ -1,42 +1,45 @@
-<div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=header"/>
+<h1 align="center">Hi 👋, I'm Muhammad Raffi Fabiansyah</h1>
+<h3 align="center">A passionate Backend & Software Developer</h3>
 
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=25&pause=1000&color=6694F2&center=true&vCenter=true&repeat=false&width=435&lines=Muhammad+Raffi+Fabiansyah" alt="Typing SVG" />
-  
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=6694F2&center=true&vCenter=true&width=435&lines=Backend+Developer;Always+learning+new+things" alt="Typing SVG" />
+<p align="center">
+  <a href="https://github.com/Raffi14">
+    <img src="https://komarev.com/ghpvc/?username=Raffi14&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+  </a>
+</p>
 
-  <br/>
-  
-  <div>
-    <a href="https://linkedin.com/in/yourprofile" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-    </a>
-    <a href="mailto:your.email@example.com">
-      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-    </a>
-  </div>
+- 🔭 I’m currently working on **No-Code AI Builder & AI-Powered Code Reviewer**
+- 🌱 I’m currently learning **Advanced Backend Development & Cloud Computing**
+- 👯 I’m looking to collaborate on **Open Source Projects**
+- 💬 Ask me about **JavaScript, TypeScript, PHP, Fastify, Next.js, React.js, Flutter, Drizzle ORM**
+- 📫 How to reach me **raffi14@example.com**
+- ⚡ Fun fact: **I learn new technologies really fast! 🚀**
 
-  <br/>
+---
 
-  <em>Based in Indonesia 🇮🇩</em>
+### 🔧 Tech Stack:
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=js,ts,php,react,nextjs,flutter,fastify,drizzle,git,github" alt="Tech Stack" />
+</p>
 
-  <br/>
-  <br/>
+---
 
-  <!-- GitHub Stats Card -->
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
-  
-  <br/>
+### 📊 GitHub Stats:
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight" alt="GitHub Stats" />
+</p>
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Raffi14&theme=tokyonight" alt="GitHub Streak" />
+</p>
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raffi14&layout=compact&theme=tokyonight" alt="Top Languages" />
+</p>
 
-  <!-- Top Languages Card -->
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Raffi14&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages"/>
-  
-  <br/>
+---
 
-  <!-- GitHub Trophies -->
-  <img src="https://github-profile-trophy.vercel.app/?username=Raffi14&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub Trophies"/>
+### 📫 Connect with me:
+[![GitHub](https://img.shields.io/badge/GitHub-%23181717.svg?&style=for-the-badge&logo=github&logoColor=white)](https://github.com/Raffi14)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230A66C2.svg?&style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/Raffi14)
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?&style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/Raffi14)
 
-  <br/>
-
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=footer"/>
-</div>
+---
+⭐️ **Don't forget to star my repositories if you find them useful!** ⭐️
