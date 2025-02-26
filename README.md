@@ -1,33 +1,66 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=header"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=header&text=Muhammad%20Raffi%20Fabiansyah&fontSize=30&fontColor=fff&animation=fadeIn&fontAlignY=25"/>
 
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=25&pause=1000&color=6694F2&center=true&vCenter=true&repeat=false&width=435&lines=Muhammad+Raffi+Fabiansyah" alt="Typing SVG" />
-  
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=6694F2&center=true&vCenter=true&width=435&lines=Backend+Developer;Always+learning+new+things" alt="Typing SVG" />
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=6694F2&center=true&vCenter=true&width=440&lines=Backend+Developer;Creative+%26+Passionate+Programmer;Always+Learning+New+Things" alt="Typing SVG" />
+  </a>
 
-  <!-- Animation -->
-  <picture>
-    <source srcset="https://i.imgur.com/PTArTqT.gifv" type="image/webp">
-    <source srcset="https://i.imgur.com/PTArTqT.gif" type="image/gif">
-  </picture>
+  <div align="center">
+    <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+  </div>
 
-  <br/>
-  
-  <!-- Rest of your README content... -->
-</div>
+  <div align="center">
+    <img src="https://cultofthepartyparrot.com/parrots/hd/githubparrot.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/flags/hd/indiaparrot.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/asyncparrot.gif" width="36" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/hd/60fpsparrot.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/hd/jumpingparrot.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/hd/opensourceparrot.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/hd/dealwithitnowparrot.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/hd/hypnoparrotlight.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/databaseparrot.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/fixparrot.gif" width="36" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/hd/laptop_parrot.gif" width="25" height="25"/>
+    <img src="https://cultofthepartyparrot.com/parrots/hd/githubparrot.gif" width="25" height="25"/>
+  </div>
+
+  <div align="center">
+    <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+  </div>
 
   <br/>
   
   <div>
     <a href="https://linkedin.com/in/yourprofile" target="_blank">
-      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
     </a>
     <a href="mailto:your.email@example.com">
-      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
     </a>
   </div>
 
-  <!-- ...rest of your README content... -->
+  <br/>
+  
+  <div>
+    <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1"/>
+  </div>
+
+  <br/>
+  
+  <div>
+    <img height="150" src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
+    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact"/>
+  </div>
+
+  <br/>
+
+  <div>
+    <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
+  </div>
+
+  <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
+  
+  <img src="https://profile-counter.glitch.me/yourusername/count.svg"/>
 
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=footer"/>
 </div>
