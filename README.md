@@ -43,11 +43,11 @@
   
   <div>
     <img height="150" src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true&include_all_commits=true&token=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" alt="GitHub Stats"/>
-    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raffi14&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact&count_private=true" alt="Most Used Languages"/>
+    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raffi14&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact&count_private=true&token=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" alt="Most Used Languages"/>
   </div>
 
   <!-- Private Contributions Graph -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Raffi14&theme=tokyo-night&hide_border=true&count_private=true" alt="Contribution Graph"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Raffi14&theme=tokyo-night&hide_border=true&count_private=true&token=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" alt="Contribution Graph"/>
 
   <!-- GitHub Trophies including private repos -->
   <div>
