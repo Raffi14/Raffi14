@@ -6,7 +6,11 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=6694F2&center=true&vCenter=true&width=435&lines=Backend+Developer;Always+learning+new+things" alt="Typing SVG" />
 
   <!-- Add video here -->
-  <img src="https://i.imgur.com/PTArTqT.gif" alt="Coding GIF" width="500"/>
+  <div align="center">
+    <video autoplay loop muted playsinline>
+      <source src="https://i.imgur.com/PTArTqT.mp4" type="video/mp4">
+    </video>
+  </div>
 
   <br/>
   
