@@ -23,18 +23,17 @@
   <br/>
   <br/>
 
-  <img src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+  <!-- GitHub Stats Card -->
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
   
   <br/>
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Raffi14&theme=tokyonight&hide_border=true" alt="GitHub Streak"/>
+  <!-- Top Languages Card -->
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Raffi14&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages"/>
   
   <br/>
 
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Raffi14&theme=tokyo-night&hide_border=true" alt="Contribution Graph"/>
-
-  <br/>
-  
+  <!-- GitHub Trophies -->
   <img src="https://github-profile-trophy.vercel.app/?username=Raffi14&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub Trophies"/>
 
   <br/>
