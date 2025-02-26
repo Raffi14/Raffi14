@@ -24,9 +24,8 @@
 ---
 
 ### 📊 GitHub Stats:
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&count_private=true" alt="GitHub Stats" />
-</p>
+<img src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true&token=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" />
+
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=Raffi14&theme=tokyonight&count_private=true" alt="GitHub Streak" />
 </p>
