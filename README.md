@@ -42,14 +42,14 @@
   <br/>
   
   <div>
-    <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1"/>
+    <img src="https://github-profile-trophy.vercel.app/?username=Raffi14&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1"/>
   </div>
 
   <br/>
   
   <div>
-    <img height="150" src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
-    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact"/>
+    <img height="150" src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
+    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raffi14&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact"/>
   </div>
 
   <br/>
@@ -60,7 +60,7 @@
 
   <img src="https://i.imgur.com/dBaSKWF.gif" height="20" width="100%">
   
-  <img src="https://profile-counter.glitch.me/yourusername/count.svg"/>
+  <img src="https://profile-counter.glitch.me/Raffi14/count.svg"/>
 
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=footer"/>
 </div>
