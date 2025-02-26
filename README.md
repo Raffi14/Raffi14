@@ -9,7 +9,6 @@
   <picture>
     <source srcset="https://i.imgur.com/PTArTqT.gifv" type="image/webp">
     <source srcset="https://i.imgur.com/PTArTqT.gif" type="image/gif">
-    <img src="https://i.imgur.com/PTArTqT.gif" alt="Coding Animation" width="500"/>
   </picture>
 
   <br/>
