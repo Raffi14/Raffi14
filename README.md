@@ -5,12 +5,15 @@
   
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=6694F2&center=true&vCenter=true&width=435&lines=Backend+Developer;Always+learning+new+things" alt="Typing SVG" />
 
-  <!-- Add video here -->
+  <!-- Looping Video -->
   <div align="center">
     <video autoplay loop muted playsinline>
       <source src="https://i.imgur.com/PTArTqT.mp4" type="video/mp4">
     </video>
   </div>
+
+  <!-- Fallback GIF for GitHub markdown -->
+  <img src="https://i.imgur.com/PTArTqT.gif" alt="Coding Animation" width="500"/>
 
   <br/>
   
@@ -23,25 +26,7 @@
     </a>
   </div>
 
-  <br/>
-
-  <em>Based in Indonesia 🇮🇩</em>
-
-  <br/>
-  <br/>
-
-  <!-- GitHub Stats -->
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
-  
-  <br/>
-
-  <!-- Top Languages -->
-  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Raffi14&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages"/>
-  
-  <br/>
-
-  <!-- GitHub Trophies -->
-  <img src="https://github-profile-trophy.vercel.app/?username=Raffi14&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub Trophies"/>
+  <!-- ...rest of your README content... -->
 
   <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=footer"/>
 </div>
