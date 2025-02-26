@@ -1,74 +1,43 @@
-### Hi there, I'm Muhammad Raffi Fabiansyah! 👋
+<div align="center">
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=header"/>
 
-#### 🚀 About Me
-- 🔭 I’m a Backend & Software Developer
-- 💻 Skilled in JavaScript, TypeScript, PHP
-- 🌟 Experienced with React.js, Flutter, Next.js, Fastify
-- 🔗 Connect with me on [LinkedIn](#) or [Twitter](#)
-
-#### 🎮 Play a Simple Game!
-Click below to play a simple **Pong Game** directly in your browser!
-
-<details>
-  <summary>🎮 Click to Play!</summary>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=25&pause=1000&color=6694F2&center=true&vCenter=true&repeat=false&width=435&lines=Muhammad+Raffi+Fabiansyah" alt="Typing SVG" />
   
-  ```html
-  <canvas id="gameCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
-  <script>
-    const canvas = document.getElementById("gameCanvas");
-    const ctx = canvas.getContext("2d");
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=6694F2&center=true&vCenter=true&width=435&lines=Backend+Developer;Always+learning+new+things" alt="Typing SVG" />
 
-    let ball = { x: 200, y: 150, dx: 2, dy: 2, radius: 10 };
-    let paddle = { x: 180, y: 280, width: 60, height: 10 };
-    let rightPressed = false, leftPressed = false;
+  <!-- Add video here -->
+  <img src="https://i.imgur.com/PTArTqT.gif" alt="Coding GIF" width="500"/>
 
-    document.addEventListener("keydown", (e) => {
-      if (e.key === "Right" || e.key === "ArrowRight") rightPressed = true;
-      else if (e.key === "Left" || e.key === "ArrowLeft") leftPressed = true;
-    });
-    document.addEventListener("keyup", (e) => {
-      if (e.key === "Right" || e.key === "ArrowRight") rightPressed = false;
-      else if (e.key === "Left" || e.key === "ArrowLeft") leftPressed = false;
-    });
+  <br/>
+  
+  <div>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+    </a>
+    <a href="mailto:your.email@example.com">
+      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+    </a>
+  </div>
 
-    function drawBall() {
-      ctx.beginPath();
-      ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI * 2);
-      ctx.fillStyle = "red";
-      ctx.fill();
-      ctx.closePath();
-    }
+  <br/>
 
-    function drawPaddle() {
-      ctx.fillStyle = "blue";
-      ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
-    }
+  <em>Based in Indonesia 🇮🇩</em>
 
-    function update() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      drawBall();
-      drawPaddle();
+  <br/>
+  <br/>
 
-      if (ball.x + ball.dx > canvas.width - ball.radius || ball.x + ball.dx < ball.radius) ball.dx = -ball.dx;
-      if (ball.y + ball.dy < ball.radius) ball.dy = -ball.dy;
-      if (ball.y + ball.dy > paddle.y - ball.radius && ball.x > paddle.x && ball.x < paddle.x + paddle.width) ball.dy = -ball.dy;
+  <!-- GitHub Stats -->
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats"/>
+  
+  <br/>
 
-      if (ball.y + ball.dy > canvas.height) {
-        alert("Game Over!");
-        document.location.reload();
-      }
+  <!-- Top Languages -->
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Raffi14&layout=compact&theme=tokyonight&hide_border=true" alt="Top Languages"/>
+  
+  <br/>
 
-      if (rightPressed && paddle.x < canvas.width - paddle.width) paddle.x += 5;
-      if (leftPressed && paddle.x > 0) paddle.x -= 5;
+  <!-- GitHub Trophies -->
+  <img src="https://github-profile-trophy.vercel.app/?username=Raffi14&theme=tokyonight&no-frame=true&row=1&column=7" alt="GitHub Trophies"/>
 
-      ball.x += ball.dx;
-      ball.y += ball.dy;
-      requestAnimationFrame(update);
-    }
-    update();
-  </script>
-  ```
-</details>
-
----
-🚀 Happy Coding! 😃
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=footer"/>
+</div>
