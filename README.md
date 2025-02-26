@@ -42,7 +42,7 @@
   <br/>
   
   <div>
-    <img height="150" src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
+    <img height="150" src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true&include_all_commits=true&token=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" alt="GitHub Stats"/>
     <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raffi14&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact&count_private=true" alt="Most Used Languages"/>
   </div>
 
