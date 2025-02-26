@@ -42,17 +42,17 @@
   <br/>
   
   <div>
-    <img src="https://github-profile-trophy.vercel.app/?username=Raffi14&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1"/>
+    <img height="150" src="https://github-readme-stats.vercel.app/api?username=yourusername&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&count_private=true&include_all_commits=true" alt="GitHub Stats"/>
+    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=yourusername&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact&count_private=true" alt="Most Used Languages"/>
   </div>
 
-  <br/>
-  
+  <!-- Private Contributions Graph -->
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=yourusername&theme=tokyo-night&hide_border=true&count_private=true" alt="Contribution Graph"/>
+
+  <!-- GitHub Trophies including private repos -->
   <div>
-    <img height="150" src="https://github-readme-stats.vercel.app/api?username=Raffi14&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117"/>
-    <img height="150" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Raffi14&theme=tokyonight&hide_border=true&bg_color=0D1117&layout=compact"/>
+    <img src="https://github-profile-trophy.vercel.app/?username=yourusername&theme=tokyonight&no-frame=true&no-bg=true&margin-w=4&row=1&count_private=true" alt="GitHub Trophies"/>
   </div>
-
-  <br/>
 
   <div>
     <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=tokyonight"/>
