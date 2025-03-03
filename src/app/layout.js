@@ -8,7 +8,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "Muhammad Raffi Fabiansyah",
-  description: "My portfolio",
+  description: "My website",
 };
 
 export default function RootLayout({ children }) {
