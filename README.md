@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=header&text=Muhammad%20Raffi%20Fabiansyah!&fontSize=30&fontColor=fff&animation=fadeIn&fontAlignY=25"/>
+  <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=6694F2&height=120&section=header&text=Muhammad%20Raffi%20Fabiansyah&fontSize=30&fontColor=fff&animation=fadeIn&fontAlignY=25"/>
 
   <a href="https://git.io/typing-svg">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=4000&pause=1000&color=6694F2&center=true&vCenter=true&width=440&lines=Backend+Developer;Creative+%26+Passionate+Programmer;Always+Learning+New+Things" alt="Typing SVG" />
