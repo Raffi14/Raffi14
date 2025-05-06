@@ -32,21 +32,18 @@ jobs:
           pnpm --version  # Verifikasi versi pnpm
 
       - name: Install dependencies
-        run: pnpm install  # Menginstal dependensi menggunakan pnpm
+        run: pnpm install
 
       - name: linting
         run: pnpm lint
 
       - name: Build with Next.js
-        run: pnpm build  # Membangun proyek dengan Next.js
-
-      - name: export static site
-        run: pnpm export
+        run: pnpm build
         
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out  # Pastikan hasil build berada di folder `out`
+          path: ./out
 
   deploy:
     environment:
