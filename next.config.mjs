@@ -3,7 +3,7 @@ const nextConfig = {
     eslint: {
         ignoreDuringBuilds: true,
     },
-    output: 'export', // Tambahkan ini untuk ekspor statis
+    output: 'export',
     distDir: 'out'
 };
 
