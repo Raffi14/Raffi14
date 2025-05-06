@@ -51,8 +51,9 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
       - name: Install pnpm
-        run: npm install -g pnpm
-
+        run: |
+              curl -f https://get.pnpm.io/v6.16.js | node - add --global pnpm
+              
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
 
