@@ -41,6 +41,7 @@ export default function Main() {
     'React',
     'Next.js',
     'Flutter',
+    'Tailwind',
   ]
 
   return (
