@@ -34,8 +34,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install  # Menginstal dependensi menggunakan pnpm
 
+      - name: linting
+        run: pnpm lint
+
       - name: Build with Next.js
-        run: pnpm run build  # Membangun proyek dengan Next.js
+        run: pnpm build  # Membangun proyek dengan Next.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
