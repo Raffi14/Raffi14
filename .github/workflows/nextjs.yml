@@ -18,29 +18,29 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: "20"  # Versi Node.js yang digunakan
-          cache: "npm"  # Gunakan cache npm (termasuk pnpm jika diperlukan)
+          node-version: "20"
 
-      - name: Install pnpm globally using npm
+      - name: Install pnpm globally
         run: |
           npm install -g pnpm
-          
+          pnpm --version  # Verifikasi versi pnpm
+
       - name: Install dependencies
         run: pnpm install  # Menginstal dependensi menggunakan pnpm
 
       - name: Build with Next.js
-        run: pnpm next build
+        run: pnpm run build  # Membangun proyek dengan Next.js
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./out  # Pastikan hasil build berada di folder `out`
 
   deploy:
     environment:
