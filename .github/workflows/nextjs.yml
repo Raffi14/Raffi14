@@ -21,6 +21,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"  # Ganti dengan versi Node.js yang sesuai jika perlu
+          cache: "npm"  # Menggunakan cache npm daripada manager paket lain
+
+      - name: Install pnpm globally using npm
+        run: |
+          npm install -g pnpm
+          echo "PATH is: $PATH"  # Verifikasi PATH untuk pnpm
+          which pnpm  # Verifikasi bahwa pnpm ada dalam PATH
+          pnpm --version  # Verifikasi versi pnpm
+
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -43,20 +56,6 @@ jobs:
             echo "Unable to determine package manager"
             exit 1
           fi
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-
-      # Install pnpm globally using npm
-      - name: Install pnpm globally using npm
-        run: |
-          npm install -g pnpm
-          echo "PATH is: $PATH"  # Output the PATH to verify if pnpm is in it
-          which pnpm  # Check if pnpm is available in PATH
-          pnpm --version  # Verify pnpm version
 
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.runner }} ${{ steps.detect-package-manager.outputs.command }}
